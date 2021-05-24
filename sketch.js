@@ -11,10 +11,10 @@ const Body = Matter.Body;
 
 function preload()
 {
-	starImg = loadImage("images/star.png");
-	fairyImg = loadAnimation("images/fairyImage1.png", "images/fairyImage2.png");
-	bgImg = loadImage("images/starNight.png");
-	sound = loadSound("sound/JoyMusic.mp3");
+	starImg = loadImage("star.png");
+	fairyImg = loadAnimation("fairyImage1.png", "fairyImage2.png");
+	bgImg = loadImage("starNight.png");
+	sound = loadSound("JoyMusic.mp3");
 
 	//load animation for fairy here
 }
@@ -56,7 +56,7 @@ function draw() {
 
   //write code to stop star in the hand of fairy
 if (starBody.position.y>470){
-  matter.body.setStatic(starBody, true)
+  Matter.Body.setStatic(starBody, true)
 }
   drawSprites();
 
